@@ -5,6 +5,22 @@
     <title>Room 21</title>
 </head>
 <body>
-room 21
+<div id="video-call-div">
+    </div>
+    <video muted id="local-video" autoplay></video>
+    <video id="remote-video" autoplay></video>
+    <div id="connecbtn" class="connect-btn">
+        <input type="text" id="namein" value="Room21">
+        <button class="btncl" onclick="start()">Start</button>
+        <button class="btncl" onclick="join()">Join</button>
+    </div>
+    <div id="act" class="call-action-div">
+        <div class="center">
+            <button class="btncl-st" onclick="muteVideo()">Mute Video</button>
+            <button class="btncl-st" onclick="muteAudio()">Mute Audio</button>
+        </div>
+    </div>
+</div>
+<script src="./main.js"></script>
 </body>
 </html>
