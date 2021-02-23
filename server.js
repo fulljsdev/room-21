@@ -44,6 +44,9 @@ httpServer.listen(80, () => {
 const webSocket = new Socket({ httpServer: httpsServer })
 let users = []
 
+function sendData(data, conn) {
+    conn.send(JSON.stringify(data))
+}
 
 function findUser(username) {
     for (let i = 0;i < users.length;i++) {
